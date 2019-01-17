@@ -1,6 +1,7 @@
 $(function(){
+
   $("#submitButton").click(function(event){
-    var aInput = $("#a").val());
+    var aInput = $("#a").val();
     var bInput = $("#b").val();
     var cInput = $("#c").val();
 
@@ -8,16 +9,15 @@ $(function(){
     var bParse = parseInt(bInput);
     var cParse = parseInt(cInput);
 
-    alert(heyy);
 
-    if ((aParse + bParse <= cParse || aParse + cParse <= bParse || bParse + cParse <= aParse) || aParse === 0 || bParse === 0 || cParse === 0) {
-      ("#not").show();
+    if ((aParse + bParse <= cParse || aParse + cParse <= bParse || bParse + cParse <= aParse) || (aParse === 0 || bParse === 0 || cParse === 0)) {
+      $("#not").show();
     } else if (aParse === bParse && bParse === cParse && cParse === aParse) {
-      ("#equal").show();
+      $("#equal").show();
     } else if (aParse !== bParse && bParse !== cParse && cParse !== aParse) {
-      ("#scalene").show();
+      $("#scalene").show();
     } else if (aParse === bParse || bParse === cParse || cParse === aParse) {
-      ("#isosceles").show();
+      $("#isosceles").show();
     }
 
     event.preventDefault();
