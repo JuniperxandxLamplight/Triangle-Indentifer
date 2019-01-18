@@ -9,7 +9,6 @@ $(function(){
     var bParse = parseInt(bInput);
     var cParse = parseInt(cInput);
 
-
     if ((aParse + bParse <= cParse || aParse + cParse <= bParse || bParse + cParse <= aParse) || (aParse === 0 || bParse === 0 || cParse === 0)) {
       $("#not").show();
     } else if (aParse === bParse && bParse === cParse && cParse === aParse) {

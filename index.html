@@ -9,38 +9,37 @@
     <title>Triangle Identifier</title>
   </head>
   <body>
+    <h1>Triangle Identifier</h1>
     <div class="container">
       <form id="triangle">
         <div class="form-group">
           <label for="a">Enter length of side one:</label>
-          <input type="number" id="a"><br>
+          <input type="number" id="a" required/><br>
           <label for="b">Enter length of side two:</label>
-          <input type="number" id="b"><br>
+          <input type="number" id="b" required/><br>
           <label for="c">Enter length of side three:</label>
-          <input type="number" id="c">
+          <input type="number" id="c" required/>
         </div>
       </form>
       <button id="submitButton" type="button" class="btn btn-success">Submit!</button>
       <div id="equal">
-        <h1>Equilateral Triangle:</h1>
+        <h2>Equilateral Triangle:</h2>
         <p> All sides are equal.</p>
-        <img src="" alt="">
+        <img src="img/equilateral.png" alt="Equilateral Triangle">
       </div>
       <div id="isosceles">
-        <h1>Isosceles Triangle:</h1>
+        <h2>Isosceles Triangle:</h2>
         <p>Exactly 2 sides are equal.</p>
-        <img src="" alt="">
+        <img src="img/isosceles.svg" alt="Isosceles Triangle">
       </div>
       <div id="scalene">
-        <h1>Scalene:</h1>
+        <h2>Scalene:</h2>
         <p>No sides are equal.</p>
-        <img src="" alt="">
+        <img src="img/scalene.png" alt="Scalene Triangle">
       </div>
       <div id="not">
-        <h1>This is NOT a triangle:</h1>
+        <h2>This is NOT a triangle:</h2>
         <p>The sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.</p>
-        <img src="" alt="">
-        <p id="test"></p>
       </div>
     </div>
   </body>
